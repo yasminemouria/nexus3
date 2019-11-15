@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.esprit</groupId>
+	<artifactId>maven-web</artifactId>
+	<version>2.0</version>
+	<packaging>war</packaging>
+	<name>maven-web</name>
+	<description>maven-web</description>
+ 
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+
+	
+
+	<distributionManagement>
+		<repository>
+			<id>nexus-release</id>
+			<name>nexus-release</name>
+			<url>http://localhost:8081/repository/nexus-release/</url>
+			<layout>default</layout>
+		</repository>
+    	     <snapshotRepository>
+      		<id>nexus-snapshot</id>
+                <name>nexus-snapshot</name>
+      		<url>http://localhost:8081/repository/nexus-snapshot/</url>
+            </snapshotRepository>
+
+  	</distributionManagement>
+	
+
+ 
+</project>
